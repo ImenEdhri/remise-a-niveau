@@ -1,0 +1,10 @@
+function sumEven(numbers) {
+  let initialValue = 0;
+  const pairArray = numbers.filter((numr) => numr % 2 == 0);
+  const sum = pairArray.reduce(
+    (accumulator, currentValue) => accumulator + currentValue,
+    initialValue,
+  );
+  console.log(sum);
+}
+sumEven([1, 2, 3, 4, 6])
