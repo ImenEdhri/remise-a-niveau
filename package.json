@@ -1,0 +1,22 @@
+{
+  "name": "remise-a-niveau",
+  "version": "1.0.0",
+  "description": "Dépôt d'entraînement personnel : exercices pratiques et mini-projets pour consolider les fondamentaux de JavaScript moderne, TypeScript et React.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImenEdhri/remise-a-niveau.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ImenEdhri/remise-a-niveau/issues"
+  },
+  "homepage": "https://github.com/ImenEdhri/remise-a-niveau#readme"
+}
