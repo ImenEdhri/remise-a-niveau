@@ -1,29 +1,35 @@
 export function mergeConfig(defaultConfig, userConfig) {
-  const isObject = (obj) => obj && typeof obj === "object";
-  if (!isObject(defaultConfig)) {
-    throw new Error("defaultConfig must be an object");
-  }
-  const mergedUserConfig = isObject(userConfig) ? userConfig : {};
-  
-  Object.keys(defaultConfig).forEach((key) => {
-    if (
-      typeof defaultConfig[key] === "object" &&
-      typeof mergedUserConfig[key] === "object"
-    ) {
-      mergedUserConfig[key] = mergeConfig(defaultConfig[key], mergedUserConfig[key]);
-    }
-  });
+ return deepMerge(defaultConfig, userConfig)
+}
+function deepMerge(defaultConfig, userConfig) {
 
-  const mergedConfig = { ...defaultConfig, ...userConfig };
-  return mergedConfig;
+  const result = { ...defaultConfig };
+
+  if (!isObject(userConfig)) {
+    return result;
+  }
+
+  for (const key in userConfig) {
+    if (
+      isObject(userConfig[key]) &&
+      isObject(defaultConfig[key])
+    ) {
+      result[key] = deepMerge(
+        defaultConfig[key],
+        userConfig[key]
+      );
+    } else {
+      result[key] = userConfig[key];
+    }
+  }
+
+  return result;
 }
 
-// console.log(
-//   mergeConfig(
-//     { theme: "light", language: "en" },
-//     { language: "fr", fontSize: 14 },
-//   ),
-// );
-console.log(
-  mergeConfig({ theme: { color: "bleu", size: 12 } }, null),
-);
+function isObject(value) {
+  return value !== null &&
+    typeof value === "object" &&
+    !Array.isArray(value);
+}
+
+
