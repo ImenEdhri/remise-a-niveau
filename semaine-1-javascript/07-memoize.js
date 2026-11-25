@@ -22,14 +22,14 @@ function slowFunction(num) {
 
 const memoizedFunction = memoize(slowFunction);
 
-console.time("First call");
-console.log(memoizedFunction(5));
-console.timeEnd("First call");
+// console.time("First call");
+// console.log(memoizedFunction(5));
+// console.timeEnd("First call");
 
-console.time("Second call");
-console.log(memoizedFunction(5));
-console.timeEnd("Second call");
+// console.time("Second call");
+// console.log(memoizedFunction(5));
+// console.timeEnd("Second call");
 
-console.time("Third call");
-console.log(memoizedFunction(10));
-console.timeEnd("Third call");
+// console.time("Third call");
+// console.log(memoizedFunction(10));
+// console.timeEnd("Third call");

@@ -14,7 +14,5 @@ export function groupBy(products, key) {
     }
     obj[item[key]].push(item);
   });
-  console.log(obj);
   return obj
 }
-// groupBy(products, "category");

@@ -347,7 +347,6 @@ test("19 – ShoppingCart", async (t) => {
   const cart = new m.ShoppingCart();
   cart.add({ name: "Café", price: 2.5 }, 2);
   cart.add({ name: "Croissant", price: 1.2 }, 1);
-  console.log({cart})
   assert.equal(cart.total, 6.2);
   cart.remove("Café");
   assert.equal(cart.total, 1.2);
