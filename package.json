@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "test": "node --test tests/*.test.js"
+    "test": "node --test tests/*.test.js",
+    "build:ts": "tsc",
+    "test:ts": "tsc || echo Erreurs TypeScript ci-dessus. && node --test tests/typescript/*.test.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/ImenEdhri/remise-a-niveau/issues"
   },
-  "homepage": "https://github.com/ImenEdhri/remise-a-niveau#readme"
+  "homepage": "https://github.com/ImenEdhri/remise-a-niveau#readme",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
 }

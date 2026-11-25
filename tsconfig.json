@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2023", "DOM"],
+    "types": [],
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "rootDir": "semaine-1-typescript",
+    "outDir": "dist",
+    "skipLibCheck": true
+  },
+  "include": ["semaine-1-typescript/**/*.ts"]
+}
