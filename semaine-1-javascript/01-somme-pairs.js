@@ -5,7 +5,6 @@ export function sumEven(numbers) {
     (accumulator, currentValue) => accumulator + currentValue,
     initialValue,
   );
-  console.log(sum);
   return sum
 }
-sumEven([1, 2, 3, 4, 6])
+// sumEven([1, 2, 3, 4, 6])

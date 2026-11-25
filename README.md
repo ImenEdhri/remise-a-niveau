@@ -32,7 +32,7 @@ node semaine-1-javascript/01-somme-pairs.js
 
 | Semaine | Thème | Statut |
 |---|---|---|
-| 1 | JavaScript moderne : tableaux, closures, asynchrone, modules | En cours |
+| 1 | JavaScript moderne : tableaux, closures, asynchrone, modules | ✅ Terminé |
 | 1 | TypeScript : types, interfaces, génériques | À venir |
 | 2 | React : hooks, état, React Query, formulaires | À venir |
 

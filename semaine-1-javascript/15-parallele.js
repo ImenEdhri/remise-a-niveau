@@ -33,11 +33,11 @@ const userIds = [1, 2, 3, 4, 5];
 
 // console.timeEnd("Sequential");
 
-console.time("Parallel");
+// console.time("Parallel");
 
-const parallelResults = await fetchPostsParallel(userIds);
+// const parallelResults = await fetchPostsParallel(userIds);
 
-console.timeEnd("Parallel");
+// console.timeEnd("Parallel");
 
 // Sequential: 752.704ms
 // Parallel: 275.476ms

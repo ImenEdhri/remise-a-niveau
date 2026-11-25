@@ -9,13 +9,13 @@ const fastOperation = new Promise(resolve => {
   setTimeout(() => resolve("Succès !"), 1000);
 });
 
-async function test() {
-  try {
-    const result = await withTimeout(fastOperation, 500);
-    console.log(result);
-  } catch (error) {
-    console.log(error.message);
-  }
-}
+// async function test() {
+//   try {
+//     const result = await withTimeout(fastOperation, 500);
+//     console.log(result);
+//   } catch (error) {
+//     console.log(error.message);
+//   }
+// }
 
-test();
+// test();

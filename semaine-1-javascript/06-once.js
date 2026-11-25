@@ -12,6 +12,6 @@ export function once(fn) {
 const fn = (a, b) => {
   return a + b;
 };
-const onceFn = once(fn);
-console.log(onceFn(1, 2));
-console.log(onceFn(10, 20));
+// const onceFn = once(fn);
+// console.log(onceFn(1, 2));
+// console.log(onceFn(10, 20));
