@@ -1,6 +1,6 @@
 type Category = "Boissons" | "Viennoiseries" | "Salé";
 
-interface Product {
+export interface Product {
   readonly id: number;
   name: string;
   category: Category;
