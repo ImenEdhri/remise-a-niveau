@@ -1,4 +1,4 @@
-type Category = "Boissons" | "Viennoiseries" | "Salé";
+export type Category = "Boissons" | "Viennoiseries" | "Salé";
 
 export interface Product {
   readonly id: number;
